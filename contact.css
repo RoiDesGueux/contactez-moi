@@ -9,7 +9,10 @@ body{
 html {
 scroll-behavior: smooth;
 }
-
+#nnav{
+  z-index: 9;
+  padding: 0.01px 0;
+}
 
 ul {
 margin: 0;
@@ -98,6 +101,7 @@ font-size: 15px;
 color: #fff;
 margin-left: 41%;
 font-size: 15px;
+padding: 0 0 ;  
 }
 .header__nav__menu__link h4 {
 color: #fff;
@@ -107,6 +111,7 @@ font-size: 15px;
 
 .sous_titre{
 display: block;
+z-index: 9;
 }
 
 .img_sous_texte{
@@ -127,7 +132,7 @@ top: 27.2%;
 margin-right: initial;
 }
 
-.header__nav__menu__link a {
+.titre-nav {
 color: #fff;
 font-family: 'Arial';
 font-weight: 850;
@@ -222,7 +227,7 @@ display: none;
     margin-bottom: 20px;
 }
 
-.header__nav__menu__link a {
+.titre-nav {
     font-size: 40px;
     left: 8%;
 }
@@ -258,207 +263,196 @@ display: none;
 
 }
 
-/* **************** IMAGE PRINCIPALE ************* */
-#imagePrincipale {
-padding-top: 60px;
-background: url(img/background/contact.png) no-repeat 50% 50%;
-background-size: cover;
-height: 799px;
-}
-
-#premierTrait {
-height: 1px;
-width: 25%;
-margin: -3px auto;
-background-color: #191b21;
-box-shadow: 1px 3px 2px #191b21;
-}
-
+  /* **************** IMAGE PRINCIPALE ************* */
+  #imagePrincipale {
+    padding-top: 60px;
+    background: url(img/background/contact.png) no-repeat 50% 50%;
+    background-size: cover;
+    height: 799px;
+    }
+    
+    #premierTrait {
+    height: 1px;
+    width: 25%;
+    margin: -3px auto;
+    background-color: #191b21;
+    box-shadow: 1px 3px 2px #191b21;
+    }
 /* *************** PRESENTATION ********************** */
+#presentations {
+  background-color: #f1f2f6;
+  padding: 20px 0px 150px 0;
+}
+#texteIntro {
+  padding: 70px 15%;
+  font-size: 1.5em;
+  font-style: oblique;
+  font-family: 'Arial', cursive;
+}
+#prestations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 5%;  
+}
+.imagesPrestations h4 {
+  font-family: 'Souvenir', cursive;
+  text-align: center;
+  font-size: 1.4em;
+  margin: 1px;
+  font-weight: 300;
+}
+.imagesPrestations img {
+  border-radius: 10px;
+  height: 305px;
+  width: 315px;
+}
+.imagesPrestations img:hover {
+  opacity: 0.5;
+  transform: scale(1.05);
+  transition: 0.6s ease-in-out;
+}
+#presentations1 {
+    background-color: #FFFAE1;
+    padding: 20px 5px 30px 0;
+  }
+#prestations1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 1%;
+    
+}
+.imagesPrestations1 h4 {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 1.8em;
+  margin: 15px;
+  font-weight: 300;
+}
+.imagesPrestations1 img {
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.7);
+  }
+  .imagesPrestations1 img:hover {
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: 0.6s ease-in-out;
+  }
+  #presentation2 {
+    background-color: #FFFAE1;
+    padding: 10px 0px 250px 0;
+  }
+#prestations2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 100px 18%;
+    
+}
+.imagesPrestations2 h4 {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 8.8em;
+  margin: 15px;
+  font-weight: 500;
+}
+.imagesPrestations2 img {
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.7);
+  }
+  .imagesPrestations2 img:hover {
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: 0.6s ease-in-out;
+  }
+
+/* **************** TOURISME ********************** */
+#tourisme {
+  height: 900px;
+  background-color: #191b21;
+  padding: 1px 2%;
+}
+#tourisme h2 {
+  padding-top: 60px;
+}
+#didier {
+  background: url(media/open.PNG);
+  
+}
+#chateau {
+  background: url(minia/best.png);
+}
+
+#tourisme li {
+  margin: 400px 200px 42 200px;
+  height: 430px;
+  width: 80%;
+  max-width: 550px;
+  float: left;
+  box-shadow: 7px 7px 50px 1px rgba(0,0,0,0.75);
+}
+#tourisme p {
+  height: 45px;
+  width: 235px;
+  background-color: #ffffff;
+  float:right;
+  margin: 50px -180px 0 0;
+  font-size: 1.1em;
+  text-align: center;
+  padding-top: 15px;
+  box-shadow: 4px 4px 0 1px rgb(138, 138, 138);
+}
+#tourisme #chateau, #tourisme #vignoble {
+  float: right ;
+  
+}
+#chateau p, #vignoble p {
+  float: left;
+  background-color: rgb(255, 255, 255);
+  margin-left: -180px;
+  box-shadow: 4px 4px 0 1px rgb(138, 138, 138);
+}
+p{
+  color: #f1f2f6;
+}
+
 #presentation {
 background-color: #f1f2f6;
 padding: 20px 0px 150px 0;
+
 }
 #texteIntro {
 padding: 70px 15%;
-font-size: 1.5em;
+font-size: 1em;
 font-style: oblique;
 font-family: 'Arial', cursive;
 }
-#prestations {
+#prestation {
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
-padding: 30px 10%;  
-z-index: -2;
-
+padding: 30px 20%;  
 }
-.imagesPrestations h4 {
+.imagesPrestation h4 {
 font-family: 'Souvenir', cursive;
 text-align: center;
 font-size: 1.4em;
-margin: 1px;
+margin: 18px;
 font-weight: 300;
 }
-.imagesPrestations img {
+.imagesPrestation img {
 border-radius: 10px;
-z-index: -2;
-
+box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.7);
+height: 245px;
+width: 35px;
 }
-.imagesPrestations img:hover {
+.imagesPrestation img:hover {
 opacity: 0.5;
 transform: scale(1.05);
 transition: 0.6s ease-in-out;
-z-index: -2;
 }
-/* **************** TOURISME ********************** */
-#tourisme {
-height: 1100px;
-background-color: #f1f2f6;
-padding: 1px 2%;
-}
-#tourisme h2 {
-padding-top: 60px;
-}
-
-
-#Actualités {
-background: url(img/jeux.png);
-}
-
-#chateau {
-background: url(img/animé.png);
-}
-#phare {
-background: url(img/bestof.png);
-}
-#vignoble {
-background: url(img/logiciel.png);
-}
-#tourisme li {
-margin: 65px 100px 0 100px;
-height: 226px;
-width: 55%;
-max-width: 550px;
-float: left;
-box-shadow: 6px 6px 28px -1px rgba(0,0,0,0.75);
-}
-#phare p {
-height: 45px;
-width: 235px;
-background-color: #ce2b36;
-float:right;
-margin: 50px -180px 0 0;
-font-size: 1.5em;
-text-align: center;
-padding-top: 15px;
-box-shadow: 4px 4px 0 1px #7b151c;
-
-}
-#Actualités p {
-height: 45px;
-width: 235px;
-background-color: #fc7265;
-margin: 50px -180px 0 0;
-font-size: 1.5em;
-text-align: center;
-padding-top: 15px;
-box-shadow: 4px 4px 0 1px #9a463e;
-margin: auto;   
-}
-#tourisme #chateau, #tourisme #vignoble {
-float: right;
-}
-#vignoble p{
-
-float: left;
-background-color: rgb(202, 198, 198);;
-margin-left: -180px;
-box-shadow: -4px 4px 0 1px rgb(151, 150, 150);
-padding-top: 15px;
-font-size: 1.5em;
-text-align: center;
-height: 45px;
-width: 235px;
-margin: 50px 0px 0 -180px;
-
-
-}
-#chateau p {
-float: left;
-background-color: rgb(242 230 128);
-margin-left: -180px;
-box-shadow: -4px 4px 0 1px rgb(197, 186, 89);
-padding-top: 15px;
-font-size: 1.5em;
-text-align: center;
-height: 45px;
-width: 235px;
-margin: 50px 0px 0 -180px;
-}
-/* ******************* FOOTER ******************** */
-footer {
-background-color: #191b21;
-color: #FFFAE1;
-padding: 20px 0 10px 0;
-text-align: center;
-}
-form {
-margin: 0 auto;
-max-width: 900px;
-}
-input, textarea, button {
-border: none;
-width: 55%;
-padding: 15px 10px;
-margin: 1px 0;
-font-size: 1.2em;
-font-family: 'Advent Pro', sans-serif;
-border-radius: 8px;
-}
-textarea {
-height: 120px;
-}
-button {
-font-size: 1.5em;
-background-color: #FFFAE1;
-}
-button:hover {
-background-color: #e55039;
-color: #FFFAE1;
-cursor: pointer;
-transition: 0.3s ease-in-out;
-}
-#deuxiemeTrait {
-height: 1px;
-width: 75%;
-background-color: #FFFAE1;
-margin: 60px auto;
-}
-#copyrightEtIcons {
-display: flex;
-margin-bottom: 20px;
-padding: 0 10%;
-}
-#copyright {
-width: 50%;
-text-align: left;
-color: #FFFAE1;
-}
-#icons {
-width: 50%;
-text-align: right;
-}
-#icons a {
-display: inline-block;
-padding: 0 15px;
-font-size: 1.3em;
-color: #FFFAE1;
-}
-#icons a:hover {
-transform: scale(1.5);
-transition: 0.1s;
-}
+/* barre de nav verticale  */
 
 .ul {
 list-style-type: none;
@@ -488,3 +482,159 @@ color: #fff;
 .icon {
   margin-right: 10px;
 }
+
+
+#presentation1 {
+  background-color: #f1f2f6;
+  padding: 20px 0px 150px 0;
+}
+
+#prestation1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 5%;  
+}
+.imagesPrestation1 h4 {
+  font-family: 'Souvenir', cursive;
+  text-align: center;
+  font-size: 1.4em;
+  margin: 1px;
+  font-weight: 300;
+}
+.imagesPrestation1 img {
+  border-radius: 10px;
+  height: 445px;
+  width: 735px;
+  box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.7);
+}
+.imagesPrestation1 img:hover {
+  opacity: 0.5;
+  transform: scale(1.05);
+  transition: 0.6s ease-in-out;
+}
+/***********************************************************/
+
+.ecarlate{
+  margin-left: -10px;
+ display: flex;
+ margin-top: 30px;
+}
+
+
+.txt-ecarlate{
+  margin-left: 200px;
+  margin-top: -40px;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    height: 195px;
+    width: 350px;
+    background-color: #c2b8ba;
+    margin: 29px -680px 0 0;
+    box-shadow: 5px 4px 0 1px rgba(0,0,0,0.7);
+    font-size: 1.32em;
+    font-family:Arial, Helvetica, sans-serif;
+  
+}
+.violet{
+  margin-left: 840px;
+  margin-top: -230px;
+  display: flex;
+}
+.txt-violet{
+  margin-left: 492px;
+  margin-top: 75px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 10px;
+    display: flex;
+    height: 195px;
+    width: 350px;
+    background-color: #c2b8ba;
+    margin: 217px -120px 2 0;
+    box-shadow: -4px 4px 0 1px rgba(0,0,0,0.7);
+    font-size: 1.32em;
+
+}
+
+.ryujinx{
+  margin-left: -29px;
+ display: flex;
+ margin-top: 40px;
+
+}
+.txt-ryujinx{
+  margin-left: 120px;
+  margin-top: 140px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 10px;
+    display: flex;
+    height: 195px;
+    width: 350px;
+    background-color: #c2b8ba;
+    margin: 27px -680px 0 0;
+    box-shadow: 4px 4px 0 1px rgba(0,0,0,0.7);
+    font-size: 1.32em;
+
+}
+.photoshop{
+  margin-left: 690px;
+  margin-top: 110px;
+  display: flex;
+}
+.txt-photoshop{
+  margin-left: 190px;
+  margin-top: 205px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 10px;
+    display: flex;
+    height: 195px;
+    width: 350px;
+    background-color: #c2b8ba;
+    margin: 17px -120px 0 0;
+    box-shadow: -4px 4px 0 1px rgba(0,0,0,0.7);
+    font-size: 1.32em;
+
+}
+
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 3em;
+  }
+  a {
+  text-decoration: none;
+  color: black;
+  }
+  #presentation {
+    background-color: #f1f2f6;
+    padding: 20px 0px 150px 0;
+  }
+  #prestation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 5%;  
+  }
+  .imagesPrestation h4 {
+    font-family: 'Souvenir', cursive;
+    text-align: center;
+    font-size: 1.4em;
+    margin: 1px;
+    font-weight: 300;
+  }
+  .imagesPrestation img {
+    border-radius: 10px;
+    height: 305px;
+    width: 815px;
+  }
+  .imagesPrestation img:hover {
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: 0.6s ease-in-out;
+  }
